@@ -90,6 +90,12 @@ const char *cusparseGetErrorString(cusparseStatus_t error) {
 
   case CUSPARSE_STATUS_MATRIX_TYPE_NOT_SUPPORTED:
     return "CUSPARSE_STATUS_MATRIX_TYPE_NOT_SUPPORTED";
+
+  case CUSPARSE_STATUS_NOT_SUPPORTED:
+    return "CUSPARSE_STATUS_NOT_SUPPORTED";
+
+  case CUSPARSE_STATUS_INSUFFICIENT_RESOURCES:
+    return "CUSPARSE_STATUS_INSUFFICIENT_RESOURCES";
   }
 
   return "<unknown>";
